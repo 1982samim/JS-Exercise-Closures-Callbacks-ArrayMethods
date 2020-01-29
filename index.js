@@ -184,7 +184,9 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
 */
 function getFullNames(runners) {
   let name =[]
-  runners.forEach((runner) => {name.push(runner.last_name +","+ runner.first_name);});
+  runners.forEach((runner) => {
+    name.push(runner.last_name + ", " + runner.first_name);
+  });
   return name;
 }
 
@@ -262,6 +264,7 @@ function counterMaker() {
     return count -1;
   }
   // BROKEN CODE ENDS
+  return counter;
 }
 
 /**
